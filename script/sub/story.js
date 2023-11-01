@@ -12,10 +12,8 @@ function setPos() {
     posArr = [];
     for(let el of articles){
         posArr.push(el.offsetTop);
-        console.log(posArr); 
     }
-    posArr.push(lastHeight);
-    console.log(posArr); 
+    posArr.push(lastHeight); 
 }
 
 window.addEventListener("mousewheel",(e)=>{

@@ -57,11 +57,6 @@
                 color: #ccc;
             }
         }
-        &:nth-of-type(3){
-            h2,strong{
-                color: yellow;
-            }
-        }
         
         &.on{
             opacity: 1;
@@ -83,7 +78,10 @@
             }
         }
         &:nth-of-type(3){
-            background-color: lightsalmon;
+            background-color: lightsalmon; 
+            h2,strong{
+                color: yellow;
+            }
             p{
                 color: #666;
             }
@@ -149,7 +147,11 @@
                 img{
                     width: 280px;
                     height: 280px;
-                    object-fit: cover;
+                    &:nth-of-type(3){
+                        width: 200px;
+                        height: 200px;
+
+                    }
                 }
             }
             .wrap{
@@ -160,7 +162,7 @@
                     margin-bottom: 10px;
                 }
                 strong{
-                    font: bold 24px/1 "Black And White Picture";
+                    font: bold 24px/1 "arial";
                 }
                 ul{
                     a{
@@ -171,51 +173,21 @@
                     font: 14px/1.4 "arial";
                 }
             }
+
         }
         nav{
-            position: absolute;
-            z-index: 3;
-            bottom: 10vh;
-            right: 15vw;
-            display: flex;
-            gap: 30px;
-            color: #fff;
-            cursor: pointer;
-            i{
-                display: inline-block;
-                &.on{
-                    color: #000;
-                    transform: scale(2);
-                }
-            }
-        }
-        .btns{
-            position: absolute;
             bottom: 5vh;
-            left: 5vh;
-            display: flex;
-            gap: 10px;
-            z-index: 3;
+        }
+
+        .btns{
+            bottom: 5vh;
+            left: 3vh;
             li{
                 width: 30px;
-                height: 5px;
-                background-color: #fff;
-                transition: 0.5s;
-                cursor: pointer;
                 &.on{
                     width: 70px;
-                    background-color: #000;
                 }
             }
-        }
-        .bar{
-            width: 0%;
-            height: 10px;
-            background-color: rgba(0,0,0,0.5);
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            z-index: 4;
         }
     }
 }

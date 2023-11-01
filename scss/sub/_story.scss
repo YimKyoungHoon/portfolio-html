@@ -42,9 +42,6 @@
             .pic{
                 width: 500px;
                 height: 500px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 margin: 0 auto;
                 img{
                     width: 100%;
@@ -65,13 +62,17 @@
         }
         article{
             width: 100%;
-            height: 100vh;
-            .pic{
-                display: none;
+            .wrap{
+                display: block;
+                p{
+                    width: 100%;
+                    font: 16px/1.2 "arial";
+                }
+                .pic{
+                    display: none;
+                }
             }
-            p{
-                font: 16px/1.2 "arial";
-            }
+            
         }
     }
 }

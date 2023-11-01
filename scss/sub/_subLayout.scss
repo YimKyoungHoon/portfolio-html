@@ -1,4 +1,4 @@
-header{
+#header_sub{
     width: 100%;
     height: 150px;
     background-color: #000;
@@ -40,7 +40,7 @@ header{
                 }
             }
         }
-        .fa-bars{
+        .btn{
             font-size: 24px;
             color: #aaa;
             position: absolute;
@@ -80,7 +80,7 @@ header{
                         width: 100%;
                         padding: 30px;
                         border-bottom: 1px solid #333;
-                        font: bold 20px/1 "arial";
+                        font: bold 13px/1 "arial";
                         color: #aaa;
                         text-align: center;
                     }
@@ -89,26 +89,114 @@ header{
         }
     }
 }
-
-@media screen and (max-width: 292px) {
-    header{
+.content{
+    width: 100%;
+    .inner{
         width: 100%;
-        .inner{
-            width: 100%;
-            padding: 10px;
-            h1{
-                width: 150px;
-                img{
-                    width: 100%;
+    }
+}
+
+#footer_sub{
+    width: 100%;
+    // padding: 100px 0;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        h1{
+            width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        nav{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .sub{
+                margin-bottom: 50px;
+                li{
+                    float: left;
+                    margin-right: 100px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    a{
+                        display: block;
+                        font: bold 20px/1 "arial";
+                        color: #999;
+                        position: relative;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
                 }
             }
-            nav{
+            .sns{
+                li{
+                    float: left;
+                    margin-right: 100px;
+                    a{
+                        color: #999;
+                        display: block;
+                        font-size: 28px;
+                        position: relative;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 292px){
+    #header_sub{
+        .inner{
+            width: 100%;
+            nav{     
                 #menuWeb{
                     display: none;
                 }
             }
-            .fa-bars{
+            .btn{
                 display: block;
+            }
+        }    
+    }
+
+    #footer_sub{
+        padding-bottom: 50px;
+        .inner{
+            width: 100%;
+            display: block;
+            h1{
+                width: 250px;
+            }
+            nav{
+                width: 100%;
+                .sub{
+                    li{
+                        margin-right: 15px;
+                        a{
+                            font: bold 15px/1 "arial";
+                        }
+                    }
+                }
+                .sns{
+                    li{
+                        margin-right: 40px;
+                    }
+                }
             }
         }
     }

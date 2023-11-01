@@ -1,4 +1,3 @@
-//변수
 const panels = document.querySelectorAll("#visual article");
 const btns = document.querySelectorAll(".btns li");
 const btnPlay = document.querySelector(".fa-play");
